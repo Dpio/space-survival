@@ -1,15 +1,18 @@
-# SpaceSurvival 0.1.0
+# SpaceSurvival 0.2.0
 
-First versioned browser proof of concept.
+The Last Signal presentation showcase.
 
 ## Player-visible highlights
 
-- deterministic arenas with walls and pulsing ion hazards
-- keyboard/mouse combat plus landscape-mobile movement, firing, pause, and retry controls
-- five enemy roles, ranged shooters, milestone bosses, radial boss bursts, health bars, and enrage phases
-- wave escalation, threat forecasts, credits, rerolls, stackable upgrades, weapon evolutions, and run persistence
-- directional Shift dash, generated combat audio, build/help/pause overlays, game-over summaries, and local personal records
+- Generated planetary scenery, a broken orbital ring, distant wrecks, and a matching launch menu.
+- Mechanical enemy silhouettes, distinct friendly and hostile projectiles, thrust, dash echoes, visible weapon modules, and capped combat debris.
+- Layered synthesized combat sound and an engine bed, with more reliable pause/resume and restart cleanup.
+- A colony-beacon story with six short transmissions and three objectives tied to existing journey milestones. Restored runs retain their current objective without replaying old transmissions.
+- A clearer HUD, fading launch guidance, a seed readout in pause, and a persistent full/reduced effects setting that initially follows the system's reduced-motion preference.
+- Story and presentation controls across all eight supported languages, with landscape touch layout checks.
 
-## Distribution
+## Compatibility and scope
 
-The static public artifact includes `release.json`. Its `version` identifies these notes and its `sourceRevision` identifies the exact private-source commit used to build it. Approved assets are audited before publishing; version 0.1.0 uses generated Phaser shapes, synthesized audio, and system fonts only.
+Existing combat balance and save schema are unchanged by this presentation pass. Translations remain first-pass translations awaiting native-speaker review. This is a playable prototype with procedural visuals and approved third-party ship/asteroid assets, not final commissioned art.
+
+The public static artifact includes `release.json` with the version and exact private-source commit. Production source maps and quarantined assets are excluded. Automated stress captures use software rendering; target GPU/phone performance and listening-based sound mix review remain pending.
