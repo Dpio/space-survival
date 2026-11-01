@@ -1,18 +1,23 @@
-# SpaceSurvival 0.2.0
+# SpaceSurvival 0.3.0
 
-The Last Signal presentation showcase.
+The visual clarity release.
 
 ## Player-visible highlights
 
-- Generated planetary scenery, a broken orbital ring, distant wrecks, and a matching launch menu.
-- Mechanical enemy silhouettes, distinct friendly and hostile projectiles, thrust, dash echoes, visible weapon modules, and capped combat debris.
-- Layered synthesized combat sound and an engine bed, with more reliable pause/resume and restart cleanup.
-- A colony-beacon story with six short transmissions and three objectives tied to existing journey milestones. Restored runs retain their current objective without replaying old transmissions.
-- A clearer HUD, fading launch guidance, a seed readout in pause, and a persistent full/reduced effects setting that initially follows the system's reduced-motion preference.
-- Story and presentation controls across all eight supported languages, with landscape touch layout checks.
+- New white/cyan player hull and a cohesive mechanical enemy fleet, retaining visible weapon upgrades, damage feedback, engine exhaust and dash echoes.
+- Clearer hostile-shot preparation: sparse direction guides, source arrows, locked-target brackets, steady charge indicators and accurate guardian volley spokes.
+- Faceted gray asteroids with craters and solid silhouettes, distinct from dim scenery and pointed hostile shots.
+- Stationary segmented gold ion emitters with a damage-radius boundary, steady charge and a brief contained electrical discharge. Reduced effects retain the same danger and timing information.
+- A spherical colony planet with terrain, cloud bands, atmospheric shading and a soft night boundary; detailed broken orbital rails, damaged transports and restrained peripheral nebulae.
+- Readable localized help, upgrades, full builds and run summaries; brighter menu/HUD text, larger story copy, dark instrument panels and a dash recharge meter.
+- Bounded enemy health markers fix the long purple strips caused by very high-health enemies in stress scenes.
 
-## Compatibility and scope
+## Compatibility and validation scope
 
-Existing combat balance and save schema are unchanged by this presentation pass. Translations remain first-pass translations awaiting native-speaker review. This is a playable prototype with procedural visuals and approved third-party ship/asteroid assets, not final commissioned art.
+Combat damage, timing, hitboxes, progression and the existing save format are unchanged. English, German, Polish, Spanish, Brazilian Portuguese, Japanese, Simplified Chinese and French remain supported; translations still await native-speaker review.
 
-The public static artifact includes `release.json` with the version and exact private-source commit. Production source maps and quarantined assets are excluded. Automated stress captures use software rendering; target GPU/phone performance and listening-based sound mix review remain pending.
+The presentation uses original code-generated graphics and existing approved assets. Planet, hull and rock textures are cached; each backdrop releases its temporary nebula texture on destruction. No external asset or dependency was added.
+
+The release is exercised by unit tests, browser gameplay/localization/journey checks and full/reduced desktop/touch stress scenes. Headless captures use software rendering and do not certify real GPU/phone performance or a final sound-mix review.
+
+The public artifact includes `release.json` identifying the exact committed private-source revision. Private source, source maps, local captures, telemetry and quarantined assets are excluded from deployment.
